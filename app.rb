@@ -10,8 +10,6 @@ class App < Sinatra::Base
   end
 
   get '/' do
-    puts "Hello world!"
-    puts ENV['RACK_ENV']
     slim :index
   end
 end
